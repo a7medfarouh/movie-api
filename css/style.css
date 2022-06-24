@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.bg-color{
+    background-color: #000;
+}
+.side{
+    width:25%;
+    height: 100vh;
+    /* background-color:red ; */
+    display: flex;
+    position: fixed;
+    cursor: pointer;
+    z-index: 99999999;
+    left: -20%;
+    
+}
+@media screen and (max-width : 700px){
+    .side{
+        left:-32%;}
+}
+.side a{
+    text-decoration: none;
+    color: white;
+}
+.side ul {
+    list-style: none;
+}
+.side .nav-tab{
+    background-color:#000;
+    height: 100vh;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.side .nav-tab .nav-item ul li{
+    padding: 10px;
+}
+.side .nav-icons .nav-social-item{
+    background-color: cornflowerblue;
+}
+.side .nav-icons{
+    background-color: white;
+    height: 100vh;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-social-item a{
+    padding: 20px;
+}
+.tab{
+    opacity:0;
+}
+input#allMovies ,input#word,input#name,input#email,input#phone,input#age,input#password,input#rePassword{
+    background-color: #000;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.movies {
+    position: relative;
+}
+.movies .content{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgba(225, 225, 225, .5);
+    height: 100%;
+    overflow: hidden;
+    /* display: none; */
+   
+    
+}
+.movies .content .inner{
+    padding-top: 30px;
+    margin-top: 50px;
+   
+}
+.col-md-4{
+    cursor: pointer;
+    overflow: hidden;
+    transition: 2s top  ease-in;
+}
+.col-md-4:hover .movies .content{
+    top: 0%;
+}
+
